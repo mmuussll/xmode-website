@@ -703,7 +703,7 @@ function createRipple(event) {
 // ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all functionality
-    console.log('X_MODE Website Loaded Successfully!');
+    
     
     // Add loading animation to service cards
     const serviceCards = document.querySelectorAll('.service-card');
