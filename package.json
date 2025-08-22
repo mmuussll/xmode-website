@@ -7,7 +7,7 @@
     "start": "python -m http.server 8000",
     "dev": "python -m http.server 8000",
     "serve": "npx serve .",
-    "build": "echo 'No build process needed for static site'",
+    "build": "node build.js",
     "test": "echo 'No tests specified'",
     "lint": "echo 'No linting configured'",
     "format": "prettier --write .",
@@ -52,11 +52,13 @@
   },
   "homepage": "https://xmode.com",
   "devDependencies": {
+    "cssnano-cli": "^1.0.5",
+    "fs-extra": "^11.3.1",
     "html-validate": "^8.13.0",
     "lighthouse": "^11.7.0",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "terser": "^5.43.1"
   },
-  "dependencies": {},
   "engines": {
     "node": ">=14.0.0",
     "npm": ">=6.0.0"
@@ -68,7 +70,6 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions",
-    "not dead"
+    "last 2 versions"
   ]
 }
