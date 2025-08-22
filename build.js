@@ -43,7 +43,8 @@ async function build() {
       '404.html',
       '.htaccess',
       'LICENSE',
-      'README.md'
+      'README.md',
+      'googleca3bb8787a863884.html'
     ];
 
     for (const file of filesToCopy) {
