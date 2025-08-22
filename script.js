@@ -78,18 +78,18 @@ function setupLazyLoading() {
 // Sticky Navigation with throttling
 const handleScroll = throttle(() => {
     if (window.scrollY > 100) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
 }, 16); // ~60fps
 
 window.addEventListener('scroll', handleScroll);
 
 // Mobile Menu Toggle
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
     
     // Update ARIA attributes
     const isExpanded = hamburger.classList.contains('active');
@@ -106,11 +106,11 @@ hamburger.addEventListener('keydown', (e) => {
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
     });
-});
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -128,8 +128,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ===== BACK TO TOP BUTTON =====
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
         backToTopBtn.classList.add('show');
     } else {
         backToTopBtn.classList.remove('show');
@@ -561,7 +561,7 @@ const throttledScrollHandler = throttle(() => {
     // Back to top button
     if (window.scrollY > 300) {
         backToTopBtn.classList.add('show');
-    } else {
+        } else {
         backToTopBtn.classList.remove('show');
     }
 }, 16); // ~60fps
@@ -669,9 +669,9 @@ function addMicroInteractions() {
     cards.forEach(card => {
         card.addEventListener('mouseenter', () => {
             card.style.transition = 'all 0.3s ease';
-        });
+            });
     });
-    
+
     // Add floating animation to icons
     const floatingIcons = document.querySelectorAll('.floating-icon');
     floatingIcons.forEach((icon, index) => {

@@ -14,12 +14,12 @@
     <url>
         <loc>https://x-mode-website.netlify.app/</loc>
         <lastmod>2024-01-15</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://x-mode-website.netlify.app/og-image.jpg</image:loc>
-            <image:title>X_MODE - شركة تقنية رائدة في تطوير المواقع والتطبيقات</image:title>
-            <image:caption>X_MODE شركة تقنية عراقية متخصصة في تطوير المواقع والتطبيقات وحلول الذكاء الاصطناعي</image:caption>
+            <image:title>حلول برمجية وتطبيقات مبتكرة | X_MODE - رؤية جوجل ومايكروسوفت</image:title>
+            <image:caption>نحن لسنا مجرد شركة ناشئة، بل ورشة عمل للمستقبل الرقمي. على خطى عمالقة التكنولوجيا جوجل ومايكروسوفت، نكرس جهودنا لتقديم حلول برمجية مبتكرة وتطوير تطبيقات رائدة</image:caption>
         </image:image>
     </url>
 
