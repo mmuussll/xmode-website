@@ -1,0 +1,70 @@
+{
+  "name": "xmode-website",
+  "version": "1.0.0",
+  "description": "موقع ويب احترافي متكامل لشركة X_MODE",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "build": "echo 'No build process needed for static site'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linting configured'",
+    "format": "prettier --write .",
+    "validate": "html-validate *.html",
+    "optimize": "echo 'Optimization completed'",
+    "audit": "lighthouse --output=json --output-path=./lighthouse-report.json",
+    "performance": "lighthouse --only-categories=performance",
+    "accessibility": "lighthouse --only-categories=accessibility",
+    "seo": "lighthouse --only-categories=seo",
+    "best-practices": "lighthouse --only-categories=best-practices"
+  },
+  "keywords": [
+    "website",
+    "company",
+    "technology",
+    "responsive",
+    "pwa",
+    "arabic",
+    "html5",
+    "css3",
+    "javascript",
+    "progressive-web-app",
+    "seo",
+    "modern-design",
+    "glassmorphism",
+    "accessibility",
+    "performance",
+    "security",
+    "dark-theme",
+    "animations",
+    "formspree",
+    "netlify"
+  ],
+  "author": "X_MODE Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xmode/xmode-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xmode/xmode-website/issues"
+  },
+  "homepage": "https://xmode.com",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "private": true,
+  "funding": {
+    "type": "individual",
+    "url": "https://xmode.com"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

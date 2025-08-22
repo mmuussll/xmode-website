@@ -1,0 +1,421 @@
+/* Table of Contents
+1.  CSS Variables
+2.  General Styles & Animations
+3.  Dark/Light Mode
+4.  Header & Navbar
+5.  Hero Section
+6.  Sections (General)
+7.  About Section
+8.  Services Section
+9.  Projects Section
+10. Team Section
+11. Blog Section
+12. Contact Section
+13. Footer
+14. Back to Top Button
+15. Media Queries
+*/
+
+/* 1. CSS Variables */
+:root {
+    --primary-color: #00aaff;
+    --secondary-color: #0077cc;
+    --dark-color: #121212;
+    --light-color: #ffffff;
+    --text-color-light: #333;
+    --text-color-dark: #e0e0e0;
+    --background-light: #f4f7f9;
+    --background-dark: #1a1a1a;
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #2a2a2a;
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-family-secondary: 'Inter', sans-serif;
+    --box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 2. General Styles & Animations */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    line-height: 1.7;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-family-secondary);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 170, 255, 0.4);
+}
+
+section {
+    padding: 80px 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* 3. Dark/Light Mode */
+body.light-mode {
+    background-color: var(--background-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-color-dark);
+}
+
+/* 4. Header & Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    transition: background-color 0.4s, box-shadow 0.4s;
+    padding: 15px 0;
+}
+
+.navbar.scrolled {
+    background: var(--card-bg-light);
+    box-shadow: var(--box-shadow);
+}
+
+.dark-mode .navbar.scrolled {
+    background: var(--card-bg-dark);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.navbar .nav-menu {
+    display: flex;
+}
+
+.navbar .nav-menu li a {
+    padding: 0 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar .nav-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s;
+}
+
+.navbar .nav-menu li a:hover::after {
+    width: 100%;
+}
+
+.theme-switcher i {
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+/* 5. Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--dark-color);
+    color: var(--light-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 170, 255, 0.1), rgba(0, 119, 204, 0.1));
+    opacity: 0.5;
+}
+
+.hero-section .container {
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+/* 6. Sections (General) */
+.service-card, .project-card, .team-member, .blog-post {
+    background: var(--card-bg-light);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover, .project-card:hover, .team-member:hover, .blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.dark-mode .service-card, .dark-mode .project-card, .dark-mode .team-member, .dark-mode .blog-post {
+    background: var(--card-bg-dark);
+}
+
+/* 8. Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* 9. Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 10. Technologies Section */
+.tech-section {
+    background-color: var(--card-bg-light);
+}
+
+.dark-mode .tech-section {
+    background-color: var(--card-bg-dark);
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.tech-icon:hover {
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+
+.tech-icon i {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 12. Contact Section */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: var(--light-color);
+}
+
+.dark-mode .contact-form input, .dark-mode .contact-form textarea {
+    background: var(--dark-color);
+    color: var(--text-color-dark);
+    border-color: #444;
+}
+
+/* 13. Footer */
+.footer {
+    background: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.social-media {
+    margin-bottom: 1rem;
+}
+
+.social-media a {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: var(--primary-color);
+}
+
+/* 14. Back to Top Button */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary-color);
+    color: var(--light-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+    font-size: 1.2rem;
+}
+
+.back-to-top-btn.show {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* 15. Media Queries */
+@media(max-width: 768px) {
+    h2 { font-size: 2rem; }
+    .hero-section h1 { font-size: 2.5rem; }
+
+    .navbar .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--card-bg-light);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .navbar .nav-menu.active {
+        left: 0;
+    }
+
+    .navbar .nav-menu li {
+        padding: 1rem 0;
+    }
+
+    .dark-mode .navbar .nav-menu {
+        background-color: var(--card-bg-dark);
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: var(--text-color-light);
+    }
+
+    .dark-mode .hamburger .bar {
+        background-color: var(--text-color-dark);
+    }
+}
