@@ -1,94 +1,16 @@
+# Allow all friendly crawlers
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://x-mode-website.netlify.app/sitemap.xml
-
-# Disallow sensitive directories and files
-Disallow: /admin/
-Disallow: /private/
-Disallow: /.git/
-Disallow: /.env
-Disallow: /backup/
-Disallow: /logs/
-Disallow: /temp/
-Disallow: /cache/
-Disallow: /config/
-Disallow: /includes/
-Disallow: /vendor/
-Disallow: /node_modules/
-Disallow: /wp-admin/
-Disallow: /wp-includes/
-Disallow: /wp-content/plugins/
-Disallow: /wp-content/themes/
-Disallow: /search?
-Disallow: /?s=
-Disallow: /?p=
-Disallow: /feed/
-Disallow: /trackback/
-Disallow: /xmlrpc.php
-
-# Block duplicate content
-Disallow: /*?*
-Disallow: /*&*
-Disallow: /search
-Disallow: /tag/
-Disallow: /category/
-
-# Allow important files
-Allow: /sitemap.xml
-Allow: /robots.txt
-Allow: /manifest.json
-Allow: /favicon.ico
-Allow: /favicon.svg
-Allow: /apple-touch-icon.png
-Allow: /browserconfig.xml
-Allow: /og-image.jpg
-
-# Allow important content sections
-Allow: /#about
-Allow: /#services
-Allow: /#products
-Allow: /#blog
-Allow: /#contact
-
-# Specific rules for different bots
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Slurp
-Allow: /
-Crawl-delay: 2
-
-User-agent: DuckDuckBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 2
-
-User-agent: YandexBot
-Allow: /
-Crawl-delay: 2
-
-# Block bad bots
+# Block specific bad bots
 User-agent: AhrefsBot
 Disallow: /
-
 User-agent: SemrushBot
 Disallow: /
-
 User-agent: MJ12bot
 Disallow: /
-
 User-agent: DotBot
 Disallow: /
 
-# Crawl delay for better server performance
-Crawl-delay: 1
+# Sitemap
+Sitemap: https://x-mode-website.netlify.app/sitemap.xml

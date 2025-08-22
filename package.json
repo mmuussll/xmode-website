@@ -51,7 +51,11 @@
     "url": "https://github.com/xmode/xmode-website/issues"
   },
   "homepage": "https://xmode.com",
-  "devDependencies": {},
+  "devDependencies": {
+    "html-validate": "^8.13.0",
+    "lighthouse": "^11.7.0",
+    "prettier": "^3.2.5"
+  },
   "dependencies": {},
   "engines": {
     "node": ">=14.0.0",
