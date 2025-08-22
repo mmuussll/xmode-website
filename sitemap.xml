@@ -12,12 +12,12 @@
 
     <!-- الصفحة الرئيسية -->
     <url>
-        <loc>https://xmode.com/</loc>
+        <loc>https://x-mode-website.netlify.app/</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://xmode.com/og-image.jpg</image:loc>
+            <image:loc>https://x-mode-website.netlify.app/og-image.jpg</image:loc>
             <image:title>X_MODE - شركة تقنية رائدة في تطوير المواقع والتطبيقات</image:title>
             <image:caption>X_MODE شركة تقنية عراقية متخصصة في تطوير المواقع والتطبيقات وحلول الذكاء الاصطناعي</image:caption>
         </image:image>
@@ -25,7 +25,7 @@
 
     <!-- قسم من نحن -->
     <url>
-        <loc>https://xmode.com/#about</loc>
+        <loc>https://x-mode-website.netlify.app/#about</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -33,7 +33,7 @@
 
     <!-- قسم الخدمات -->
     <url>
-        <loc>https://xmode.com/#services</loc>
+        <loc>https://x-mode-website.netlify.app/#services</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -41,7 +41,7 @@
 
     <!-- قسم المنتجات -->
     <url>
-        <loc>https://xmode.com/#products</loc>
+        <loc>https://x-mode-website.netlify.app/#products</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -49,7 +49,7 @@
 
     <!-- قسم المدونة -->
     <url>
-        <loc>https://xmode.com/#blog</loc>
+        <loc>https://x-mode-website.netlify.app/#blog</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
@@ -57,7 +57,7 @@
 
     <!-- قسم الإحصائيات -->
     <url>
-        <loc>https://xmode.com/#statistics</loc>
+        <loc>https://x-mode-website.netlify.app/#statistics</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -65,7 +65,7 @@
 
     <!-- قسم آراء العملاء -->
     <url>
-        <loc>https://xmode.com/#testimonials</loc>
+        <loc>https://x-mode-website.netlify.app/#testimonials</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -73,7 +73,7 @@
 
     <!-- قسم التواصل -->
     <url>
-        <loc>https://xmode.com/#contact</loc>
+        <loc>https://x-mode-website.netlify.app/#contact</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
