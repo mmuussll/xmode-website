@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X_MODE OG Image Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #0D0D0D, #1A1A1A);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .og-container {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #0D0D0D, #1A1A1A);
+            border-radius: 20px;
+            padding: 60px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .og-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 20%, rgba(0, 123, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(0, 208, 132, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .logo {
+            font-size: 48px;
+            font-weight: 900;
+            color: #007BFF;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .title {
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #007BFF, #00D084);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            font-size: 32px;
+            color: #B0B0B0;
+            text-align: center;
+            line-height: 1.4;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .feature {
+            text-align: center;
+            font-size: 24px;
+            color: #00D084;
+        }
+        .feature i {
+            font-size: 32px;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="og-container">
+        <div class="logo">X_MODE</div>
+        <h1 class="title">شركة تقنية رائدة في تطوير المواقع والتطبيقات وحلول الذكاء الاصطناعي</h1>
+        <p class="subtitle">نطور حلول تقنية مبتكرة تجمع بين الإبداع والتكنولوجيا لخدمة الأفراد والشركات في العراق والشرق الأوسط</p>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-globe"></i>
+                تطوير المواقع
+            </div>
+            <div class="feature">
+                <i class="fas fa-mobile-alt"></i>
+                تطبيقات الهواتف
+            </div>
+            <div class="feature">
+                <i class="fas fa-brain"></i>
+                الذكاء الاصطناعي
+            </div>
+        </div>
+    </div>
+</body>
+</html>
